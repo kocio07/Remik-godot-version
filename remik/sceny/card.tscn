@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dykuqoxhay4r4"]
+
+[ext_resource type="Texture2D" uid="uid://bk2p1jl6lu4so" path="res://txt/cards/Clubs/1c.png" id="1_l108p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f6xyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l108p")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epuwg"]
+size = Vector2(470.46487, 701.5165)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=122423745]
+position = Vector2(231.99998, 486)
+scale = Vector2(0.28611633, 0.2861163)
+sprite_frames = SubResource("SpriteFrames_f6xyr")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1066814741]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1045316032]
+position = Vector2(4.557007, 5.7403564)
+scale = Vector2(0.99999976, 1)
+shape = SubResource("RectangleShape2D_epuwg")
